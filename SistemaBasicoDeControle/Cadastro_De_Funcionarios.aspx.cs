@@ -29,7 +29,7 @@ namespace SistemaBasicoDeControle
                         inputRg.Value,
                         inputTelefone.Value,
                         inputDataDeNascimento.Value,
-                         inputCidade.Value,
+                        inputCidade.Value,
                         inputEstado.Value,
                         inputCep.Value,
                         inputCargo.Value,

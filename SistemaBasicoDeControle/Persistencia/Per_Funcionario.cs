@@ -75,7 +75,7 @@ namespace SistemaBasicoDeControle.Persistencia
                 {
                     conn.Open();
 
-                    using (var cmd = new NpgsqlCommand(string.Format("SELECT * FROM ph_funcionarios WHEREcpf = '{0}'", cpf), conn))
+                    using (var cmd = new NpgsqlCommand(string.Format("SELECT * FROM ph_funcionarios WHERE cpf = '{0}'", cpf), conn))
                     {
                         DataTable dataTable = new DataTable();
 
@@ -115,5 +115,55 @@ namespace SistemaBasicoDeControle.Persistencia
                 throw ex;
             }
         }
+
+        public static void EditarPeloCpf(Funcionario funcionario)
+        {
+            try
+            {
+                using (var conn = new NpgsqlConnection(connString))
+                {
+                    conn.Open();
+
+                    using (var cmd = new NpgsqlCommand(string.Format("UPDATE ph_funcionarios SET nome = '{0}',cpf = '{1}', " +
+                        "rg = '{2}', telefone = '{3}',dataDeNascimento = '{4}',cidade = '{5}',estado = '{6}',cep = '{7}',cargo = '{8}'," +
+                        "formacao = '{9}',salario = '{10}',email = '{11}' WHERE cpf = '{1}'", funcionario.Nome, funcionario.Cpf, funcionario.Rg, funcionario.Telefone, funcionario.DataDeNascimento, funcionario.Cidade,
+                         funcionario.Estado, funcionario.Cep, funcionario.Cargo, funcionario.Formacao, funcionario.Salario, funcionario.Email), conn))
+                    {
+                        DataTable dataTable = new DataTable();
+
+                        var funcionarios = cmd.ExecuteReader();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+        public static void Deletar(string cpf)
+        {
+            try
+            {
+                using (var conn = new NpgsqlConnection(connString))
+                {
+                    conn.Open();
+
+                    using (var cmd = new NpgsqlCommand(string.Format("DELETE FROM ph_funcionarios WHERE cpf = '{0}'", cpf), conn))
+                    {
+                        DataTable dataTable = new DataTable();
+
+                        var funcionarios = cmd.ExecuteReader();
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
     }
 }

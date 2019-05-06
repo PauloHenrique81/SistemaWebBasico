@@ -42,5 +42,8 @@ namespace SistemaBasicoDeControle.Models
             this.Email = email;
         }
 
+        public Funcionario(string v1, string v2, object text)
+        {
+        }
     }
 }

@@ -54,9 +54,9 @@ function RegistrarEventoEditar() {
     var linhas = document.querySelectorAll("tr");
     Array.from(linhas).forEach((linha) => {
 
-        linha.addEventListener("click", function (event) {
+        linha.addEventListener("dblclick", function (event) {
 
-            location.href = `/BuscarFuncionario.aspx?Id=${linha.children[2].innerHTML}`;
+            location.href = `/DetalhesFuncionario.aspx?Id=${linha.children[2].innerHTML}`;    
 
         });
 

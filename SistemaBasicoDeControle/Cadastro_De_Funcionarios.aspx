@@ -70,7 +70,6 @@
             </div>
 
             <button class="btn btn-primary" type="submit">Cancelar</button>
-            <%--<button class="btn btn-primary" type="submit" id="btnCadastrar"  runat="server">Cadastrar</button>--%>
             <asp:button CssClass="btn btn-primary"  id="btnCadastrar2" Text="Cadastrar" runat="server" onclick="BtnCadastrar_Click"/>
 
         </form>

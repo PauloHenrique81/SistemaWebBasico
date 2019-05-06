@@ -92,10 +92,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AlterarDadosFuncionario.aspx" />
-    <Content Include="BuscarFuncionario.aspx" />
+    <Content Include="DetalhesFuncionario.aspx" />
     <Content Include="Cadastro_De_Funcionarios.aspx" />
     <Content Include="JavaScript\Filtro_ListagemDeFuncionarios.js" />
+    <Content Include="JavaScript\Funcionario\detalhes.js" />
     <Content Include="JavaScript\jquery.js" />
     <Content Include="JavaScript\ListagemDeFuncionarios.js" />
     <Content Include="Lista_De_Funcionarios.aspx" />
@@ -103,19 +103,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlterarDadosFuncionario.aspx.cs">
-      <DependentUpon>AlterarDadosFuncionario.aspx</DependentUpon>
+    <Compile Include="DetalhesFuncionario.aspx.cs">
+      <DependentUpon>DetalhesFuncionario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AlterarDadosFuncionario.aspx.designer.cs">
-      <DependentUpon>AlterarDadosFuncionario.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="BuscarFuncionario.aspx.cs">
-      <DependentUpon>BuscarFuncionario.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BuscarFuncionario.aspx.designer.cs">
-      <DependentUpon>BuscarFuncionario.aspx</DependentUpon>
+    <Compile Include="DetalhesFuncionario.aspx.designer.cs">
+      <DependentUpon>DetalhesFuncionario.aspx</DependentUpon>
     </Compile>
     <Compile Include="CadastroMasterPage.Master.cs">
       <DependentUpon>CadastroMasterPage.Master</DependentUpon>

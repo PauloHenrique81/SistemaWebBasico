@@ -27,9 +27,6 @@
             <div class="list-group list-group-flush">
                 <a href="Cadastro_De_Funcionarios.aspx" class="list-group-item list-group-item-action bg-light">Cadastrar Funcionário</a>
                 <a href="Lista_De_Funcionarios.aspx" class="list-group-item list-group-item-action bg-light">Lista de Funcionários</a>
-                <a href="#" class="list-group-item list-group-item-action bg-light">Lista de Salarios </a>
-                <a href="AlterarDadosFuncionario.aspx" class="list-group-item list-group-item-action bg-light">Alterar dados de Funcionário</a>
-                <a href="BuscarFuncionario.aspx" class="list-group-item list-group-item-action bg-light">Buscar Funcionário</a>
                 <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
             </div>
         </div>
